@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Presuntos Delincuentes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Registro de Delincuentes</h1>
+    <form action="registrar.php" method="POST" enctype="multipart/form-data">
+        <label>Fotografía: <input type="file" name="foto" required></label><br>
+        <label>Nombres: <input type="text" name="nombres" required></label><br>
+        <label>Apellido Paterno: <input type="text" name="apellido_paterno" required></label><br>
+        <label>Apellido Materno: <input type="text" name="apellido_materno" required></label><br>
+        <label>Alias: <input type="text" name="alias"></label><br>
+        <label>Edad: <input type="number" name="edad" required></label><br>
+        <label>Sexo:
+            <select name="sexo">
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Otro">Otro</option>
+            </select>
+        </label><br>
+        <label>Rasgos personales: <textarea name="rasgos_personales"></textarea></label><br>
+        <label>Tatuajes: <textarea name="tatuajes"></textarea></label><br>
+        <label>Estatura (m): <input type="number" step="0.01" name="estatura"></label><br>
+        <label>Peso (kg): <input type="number" step="0.1" name="peso"></label><br>
+        <label>Familiares o personas cercanas: <textarea name="familiares"></textarea></label><br>
+        <label>Fecha de ingreso: <input type="date" name="fecha_ingreso"></label><br>
+        <label>Hora de ingreso: <input type="time" name="hora_ingreso"></label><br>
+        <label>Conducta: <textarea name="conducta"></textarea></label><br>
+        <label>Crimen: <textarea name="crimen"></textarea></label><br>
+        <label>Condena: <textarea name="condena"></textarea></label><br>
+        <label>Lugar de origen: <input type="text" name="lugar_origen"></label><br>
+        <label>Tiempo en prisión: <input type="text" name="tiempo_en_prision"></label><br>
+        <label>Residencia actual: <input type="text" name="residencia"></label><br>
+        <button type="submit">Registrar</button>
+    </form>
+</body>
+</html>
